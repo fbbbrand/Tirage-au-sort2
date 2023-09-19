@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tirage au sort</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="title-container">
+        <p>Qui sera le grand</p>
+        <p><span class="fancy">gagnant ?</span></p>
+      </div>
+      <div class="input-group">
+        <label for="participant">Nombre de participants :</label>
+        <input type="number" id="participant" />
+        <button class="btn" onclick="createTirage()">Créer le tirage</button>
+      </div>
+      <button class="btn2" onclick="startTirage()">Tirer au sort</button>
+      <div id="tirageContainer">
+        <div class="box-container"></div>
+      </div>
+      <div id="winnerText"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
