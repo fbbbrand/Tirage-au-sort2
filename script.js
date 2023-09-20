@@ -13,7 +13,7 @@ function createTirage() {
     availableNumbers.push(i);
   }
 
-  var boxesPerRow = 4;
+  var boxesPerRow = 5;
   var rows = Math.ceil(participantCount / boxesPerRow);
 
   for (var j = 0; j < rows; j++) {
