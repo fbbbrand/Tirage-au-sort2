@@ -13,7 +13,7 @@ function createTirage() {
     availableNumbers.push(i);
   }
 
-  var boxesPerRow = 5;
+  var boxesPerRow = 4;
   var rows = Math.ceil(participantCount / boxesPerRow);
 
   for (var j = 0; j < rows; j++) {
@@ -57,8 +57,5 @@ function startTirage() {
     var winnerNumber = availableNumbers[winnerIndex];
     boxes[winnerNumber - 1].classList.remove("highlight");
     boxes[winnerNumber - 1].classList.add("winner");
-    document.getElementById("winnerText").textContent =
-      "Le gagnant est le numéro : " + winnerNumber;
-    availableNumbers.splice(winnerIndex, 1);
   }, 8000);
 }
