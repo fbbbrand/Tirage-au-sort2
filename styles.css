@@ -85,7 +85,7 @@ label {
   flex-direction: column; /* Afficher les éléments en colonne */
   align-items: center;
   margin-bottom: 20px;
-  z-index: 2;
+  z-index: 3;
   margin-top: 50px;
 }
 
@@ -97,7 +97,7 @@ label {
   margin-bottom: 20px;
   border-radius: 10px;
   border: 1px solid #cccccc;
-  z-index: 2;
+  z-index: 3;
   font-size: 16px;
   text-align: center;
 }
@@ -112,7 +112,7 @@ label {
   transition: background-color 0.3s ease;
   font-size: 18px;
   border-radius: 10px;
-  z-index: 2;
+  z-index: 3;
   width: 250px; /* Ajuster la largeur automatiquement */
   margin-right: 300px;
 
@@ -136,7 +136,7 @@ label {
   width: 250px; /* width: 400px; Retirer la largeur fixe */
   margin-top: -41px;
   margin-right: 0px;
-  z-index: 2;
+  z-index: 3;
 }
 
 .btn2:hover {
@@ -173,16 +173,6 @@ label {
   animation: highlightAnimation 0.3s infinite;
 }
 
-.winner {
-  background-color: #510bf3;
-  color: white;
-}
-
-#winnerText {
-  font-size: 24px;
-  margin-top: 20px;
-  font-weight: bold;
-}
 
 @keyframes highlightAnimation {
   0% {
@@ -466,3 +456,14 @@ label {
   .Cloud.Background {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEoAAAAqCAYAAAAUJM0rAAACFUlEQVRo3u3aPSwDYRzH8UZEbAYiYrDYjLZGpIPBJLGwSKwi0k1iYBKDdFJsEiMxSZgsFZJGiGjqJWEhSKuaNKRUG8r5PfI8SXOud72+PH2eu2f47Ndv7+V5/nee/G6bh5MWmIV9iEMWvkGjfiADD7AHk9BU6+PSNK0kPAINwwXkC6KU6gvC4HVyKB/clhHHCDnbTqHbSaEaYIv+OK3KyBk274RQrXBXg0B6B/QPkTIUiZTiEIm5gkbZQjXTJ5nG2ZFsocJ1iMQEZQk1VcdIGl2L9Yoeitwj3uocirgRPVRAgEjMoMihkgKFStIzK063QVHYhKF6h/IKFMlKGpaNlhM8Qq1JFIp5gQHeoSIShmJPST/PUElJQ7FN9hivUGmJQxE56OQRKiN5qL/NNY9QKQeEIpdgR7VC9cEqHeGeUyEHXHrMUiWhyKx6BV4dEsNMtNxQI4Ls33h5LidUoEYjXKEXoXZDLbgsEBOzE8qne8fmJhE7oWIujUQcwhyMmy0VSKRRF0cyWlclYMYo1LEKZOgRugpDpVWUot5ZLI8LlwN23bNQKoY1vwpVmmsS6kOFsPRJQl2qENZIqGkVwnp9xb5nUksEcxm2hZlQMcy3OYXTgx0VpOi2pl8/jwqpMP9sF5twBl08ctE7I/dws5l5D5y4OBj51HvdzluYdlik0RL06cjkKpSlB1Span5x/AQb5Hfrxyy/oU5ISeVw53AAAAAASUVORK5CYII=);
   }
+
+  canvas {
+    cursor: crosshair;
+    display: block;
+    margin-top: -25%;
+    z-index: 2;
+  }
+  
+
+  
+  
